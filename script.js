@@ -6,7 +6,7 @@ const baptismConfig = {
   hosts: "ብሩክ ደበበ እና ነብያት ሳሙኤል",
   churchLocation: "ቅድስት ስላሴ ቤ/ክ 4ኪሎ",
   lunchLocation: "ቦሌ ቡልቡላ 93 ማዞሪያ ወረዳ 12 ጀርባ",
-  churchMapUrl: "https://www.google.com/maps/search/?api=1&query=ቅድስት+ስላሴ+ቤተ+ክርስቲያን+4+ኪሎ+Addis+Ababa",
+  churchMapUrl: "https://maps.app.goo.gl/hZo4JGfPbZUtwDhP6?g_st=ic",
   lunchMapUrl: "https://www.google.com/maps/search/?api=1&query=ቦሌ+ቡልቡላ+93+ማዞሪያ+ወረዳ+12+Addis+Ababa"
 };
 
