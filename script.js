@@ -7,7 +7,7 @@ const baptismConfig = {
   churchLocation: "ቅድስት ስላሴ ቤ/ክ 4ኪሎ",
   lunchLocation: "ቦሌ ቡልቡላ 93 ማዞሪያ ወረዳ 12 ጀርባ",
   churchMapUrl: "https://maps.app.goo.gl/hZo4JGfPbZUtwDhP6?g_st=ic",
-  lunchMapUrl: "https://www.google.com/maps/search/?api=1&query=ቦሌ+ቡልቡላ+93+ማዞሪያ+ወረዳ+12+Addis+Ababa"
+  lunchMapUrl: "https://maps.app.goo.gl/24fEhbyx2XdZ3bGTA?g_st=ic"
 };
 
 (function () {
