@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="baptism">
+  <title>ክርስትና ግብዣ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@300;400;600;700&family=Noto+Serif+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="musicToggle" class="music-btn" aria-label="Play background music" aria-pressed="false" hidden>
+    <span class="music-icon" aria-hidden="true">&#9836;</span>
+    <span class="music-state" aria-hidden="true">OFF</span>
+  </button>
+
+  <div id="loading" class="screen loading-screen" role="presentation" aria-hidden="true">
+    <img src="images/loading.jpg" alt="" class="bg-image">
+    <div class="screen-overlay"></div>
+    <div class="loading-content">
+      <p class="loading-subtitle">ክርስትና</p>
+      <h1 class="loading-title"></h1>
+      <p class="loading-date">October 13 | ጥር 3</p>
+    </div>
+  </div>
+
+  <div id="opening" class="screen opening-screen" role="dialog" aria-label="Invitation opening" aria-modal="true">
+    <img src="images/opening.jpg" alt="" class="bg-image">
+    <div class="screen-overlay"></div>
+    <div class="opening-content">
+      <p class="opening-label">የክርስትና ግብዣ</p>
+      <h1 class="opening-title"></h1>
+      <p class="opening-quote">"የጥምቀት ደስታችንን አብረን እንካፈል"</p>
+      <button id="openInvite" class="open-btn" type="button">
+        <span>OPEN INVITATION</span>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mainNav" class="main-nav" aria-label="Main navigation" aria-hidden="true">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+      <span class="hamburger" aria-hidden="true"></span>
+      <span class="sr-only">Toggle menu</span>
+    </button>
+    <ul id="navMenu" class="nav-menu">
+      <li><a href="#home">መነሻ</a></li>
+      <li><a href="#invitation">ግብዣ</a></li>
+      <li><a href="#scripture">ቃለ እግዚአብሔር</a></li>
+      <li><a href="#countdown">ቆጠራ</a></li>
+      <li><a href="#events">ፕሮግራም</a></li>
+      <li><a href="#locations">ቦታ</a></li>
+      <li><a href="#closing">መጨረሻ</a></li>
+    </ul>
+  </nav>
+
+  <main id="mainContent" class="main-content" aria-label="Invitation content" aria-hidden="true">
+    <section id="home" class="section home-section">
+      <div class="home-ornament" aria-hidden="true">
+        <span class="cross">&#10013;</span>
+      </div>
+      <p class="home-welcome reveal">እንኳን ወደ ክርስትና ግብዣ በደህና መጡ</p>
+      <h2 class="section-title home-title reveal"></h2>
+      <p class="home-date reveal">October 13 <span class="divider" aria-hidden="true">|</span> ጥር 3</p>
+    </section>
+
+    <section id="invitation" class="section invitation-section">
+      <div class="container">
+        <div class="photo-card reveal">
+          <img src="images/photo3.jpg" alt="ቅዱስ ጥምቀት የግብዣ ፎቶ" loading="lazy" decoding="async">
+        </div>
+        <div class="text-card reveal">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <h2 class="section-title">ግብዣ</h2>
+          <p class="invitation-text">
+            እግዚአብሔር ፈቅዶ ልጃችን ሥርዓተ ጥምቀቱ ጥቅምት 03 2019 ዓ.ም የሚፈጸም ሲሆን የእግዚአብሔር ልጅነትን ያገኘበትን ቀን አብረን እናስብ እና እናከብር ዘንድ በልዑል እግዚአብሔር ስም ተጋብዘዋል።
+          </p>
+          <div class="hosts">
+            <p class="hosts-label">ጠሪ ሰም:</p>
+            <p class="hosts-name">ብሩክ ደበበ እና ነብያት ሳሙኤል</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="scripture" class="section scripture-section">
+      <div class="scripture-bg">
+        <img src="images/photo4.jpg" alt="የእግዚአብሔር ቃል የተጻፈበት ወረቀት" loading="lazy" decoding="async">
+      </div>
+      <div class="scripture-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="scripture-card reveal">
+          <span class="scripture-icon" aria-hidden="true">&#10013;</span>
+          <h2 class="section-title">የዕለቱ ቃል</h2>
+          <blockquote class="verse" cite="https://www.bible.com/bible/1713/JHN.3.5">
+            <p>እውነት እውነት እልሃለሁ ሰው ከውኃና ከመንፈስ ካልተወለደ በቀር ወደ እግዚአብሔር መንገሥት ሊገባ አይችልም።ከሥጋ የተወለደ ሥጋ ነው ፣ ከመንፈስ የተወለደ መንፈስ ነው።</p>
+            <footer>ዮሐ 3፡5</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="countdown" class="section countdown-section">
+      <div class="container">
+        <div class="countdown-header reveal">
+          <p class="countdown-subtitle">ጥቅምት 03 2019 ዓ.ም</p>
+          <h2 class="section-title">የጥምቀቱ ቀን ሊደርስ ነው</h2>
+        </div>
+        <div id="countdownTimer" class="countdown-grid reveal" aria-live="polite">
+          <div class="count-box">
+            <span id="days" class="count-number">00</span>
+            <span class="count-label">DAYS</span>
+          </div>
+          <div class="count-box">
+            <span id="hours" class="count-number">00</span>
+            <span class="count-label">HOURS</span>
+          </div>
+          <div class="count-box">
+            <span id="minutes" class="count-number">00</span>
+            <span class="count-label">MINUTES</span>
+          </div>
+          <div class="count-box">
+            <span id="seconds" class="count-number">00</span>
+            <span class="count-label">SECONDS</span>
+          </div>
+        </div>
+        <p id="countdownMessage" class="countdown-message reveal" aria-live="assertive"></p>
+      </div>
+    </section>
+
+    <section id="events" class="section events-section">
+      <div class="container">
+        <h2 class="section-title reveal">የዕለቱ ፕሮግራሞች</h2>
+        <div class="events-timeline">
+          <article class="event-card reveal">
+            <div class="event-image">
+              <img src="images/photo5.jpg" alt="ቅድስት ስላሴ ቤተ ክርስቲያን የክርስትና ፕሮግራም" loading="lazy" decoding="async">
+            </div>
+            <div class="event-body">
+              <span class="event-icon" aria-hidden="true">⛪</span>
+              <h3 class="event-title">የቤተ ክርስቲያን የክርስትና ፕሮግራም</h3>
+              <div class="event-detail">
+                <span class="detail-label">ሰዓት:</span>
+                <span class="detail-value">ከጠዋቱ 12:30</span>
+              </div>
+              <div class="event-detail">
+                <span class="detail-label">ቦታ:</span>
+                <span class="detail-value">ቅድስት ስላሴ ቤ/ክ 4ኪሎ</span>
+              </div>
+              <button class="map-btn" type="button" data-map="churchMapUrl" aria-label="ቅድስት ስላሴ ቤ/ክ አቅጣጫ በ Google Maps ይመልከቱ">
+                አቅጣጫ ይመልከቱ
+              </button>
+            </div>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-image">
+              <img src="images/photo6.jpg" alt="የምሳ ጥሪ በ ቦሌ ቡልቡላ" loading="lazy" decoding="async">
+            </div>
+            <div class="event-body">
+              <span class="event-icon" aria-hidden="true">🍽️</span>
+              <h3 class="event-title">የምሳ ጥሪ</h3>
+              <div class="event-detail">
+                <span class="detail-label">ሰዓት:</span>
+                <span class="detail-value">6:00</span>
+              </div>
+              <div class="event-detail">
+                <span class="detail-label">ቦታ:</span>
+                <span class="detail-value">ቦሌ ቡልቡላ 93 ማዞሪያ ወረዳ 12 ጀርባ</span>
+              </div>
+
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="locations" class="section locations-section">
+      <div class="container">
+        <h2 class="section-title reveal">ቦታዎች</h2>
+        <div class="locations-grid">
+          <div class="location-card reveal">
+            <div class="location-icon" aria-hidden="true">⛪</div>
+            <h3 class="location-name">ቅድስት ስላሴ ቤ/ክ — 4 ኪሎ</h3>
+            <p class="location-program">የቤተ ክርስቲያን የክርስትና ፕሮግራም</p>
+            <button class="map-btn" type="button" data-map="churchMapUrl">GET DIRECTIONS</button>
+          </div>
+          <div class="location-card reveal">
+            <div class="location-icon" aria-hidden="true">🍽️</div>
+            <h3 class="location-name">ቦሌ ቡልቡላ</h3>
+            <p class="location-address">93 ማዞሪያ ወረዳ 12 ጀርባ</p>
+            <p class="location-program">የምሳ ጥሪ</p>
+            <button class="map-btn" type="button" data-map="lunchMapUrl">GET DIRECTIONS</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="family" class="section family-section">
+      <div class="family-photo">
+        <img src="images/photo7.jpg" alt="የቤተሰብ ጸሎት እና በረከት" loading="lazy" decoding="async">
+      </div>
+      <div class="family-overlay" aria-hidden="true"></div>
+      <div class="container family-content">
+        <h2 class="section-title reveal">የደስታችን ቀን</h2>
+        <p class="family-name reveal"></p>
+        <p class="family-blessing reveal">
+          በእግዚአብሔር ፍቅር የተሞላ ይህን የጥምቀት ደስታ ከቤተሰባችን ጋር አብራችሁ እንድትደስቱ በትህትና እንጋብዛለን። እግዚአብሔር ይባርከን!
+        </p>
+      </div>
+    </section>
+
+    <section id="closing" class="section closing-section">
+      <div class="closing-image">
+        <img src="images/photo8.jpg" alt="የቅዱስ ጥምቀት የመጨረሻ ፎቶ" loading="lazy" decoding="async">
+      </div>
+      <div class="closing-overlay" aria-hidden="true"></div>
+      <div class="closing-content">
+        <h2 class="closing-name reveal"></h2>
+        <h3 class="closing-title reveal">ክርስትና</h3>
+        <p class="closing-date reveal">October 13 <span class="divider" aria-hidden="true">|</span> ጥር 3</p>
+        <p class="closing-hosts reveal">ብሩክ ደበበ እና ነብያት ሳሙኤል</p>
+        <p class="closing-blessing reveal">"እግዚአብሔር ይባርከን!"</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>በእግዚአብሔር ፍቅር የተሰራ ግብዣ</p>
+  </footer>
+
+  <div id="particles" class="particles" aria-hidden="true"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
