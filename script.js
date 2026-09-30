@@ -66,11 +66,9 @@ const baptismConfig = {
     audio.play().then(() => {
       musicBtn.classList.add("playing");
       musicBtn.setAttribute("aria-pressed", "true");
-      musicBtn.querySelector(".music-state").textContent = "ON";
     }).catch(() => {
       musicBtn.classList.remove("playing");
       musicBtn.setAttribute("aria-pressed", "false");
-      musicBtn.querySelector(".music-state").textContent = "OFF";
     });
 
     setTimeout(() => {
@@ -85,13 +83,11 @@ const baptismConfig = {
       audio.play().then(() => {
         musicBtn.classList.add("playing");
         musicBtn.setAttribute("aria-pressed", "true");
-        musicBtn.querySelector(".music-state").textContent = "ON";
       }).catch(() => {});
     } else {
       audio.pause();
       musicBtn.classList.remove("playing");
       musicBtn.setAttribute("aria-pressed", "false");
-      musicBtn.querySelector(".music-state").textContent = "OFF";
     }
   });
 
