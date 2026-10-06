@@ -4,9 +4,9 @@ const baptismConfig = {
   displayDate: "October 13 | ጥር 3",
   countdownDate: "2026-10-13T12:30:00",
   hosts: "ብሩክ ደበበ እና ነብያት ሳሙኤል",
-  churchLocation: "ቅድስት ስላሴ ቤ/ክ 4ኪሎ",
+  churchLocation: "በዓታ ለማርያም ቤተ ክርስቲያን",
   lunchLocation: "ቦሌ ቡልቡላ 93 ማዞሪያ ወረዳ 12 ጀርባ",
-  churchMapUrl: "https://maps.app.goo.gl/hZo4JGfPbZUtwDhP6?g_st=ic",
+  churchMapUrl: "https://maps.app.goo.gl/Vd88qD2ZfNSq82i99?g_st=ic",
   lunchMapUrl: "https://maps.app.goo.gl/24fEhbyx2XdZ3bGTA?g_st=ic"
 };
 
